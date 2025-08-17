@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lost Items</title>
+  <link rel="stylesheet" href="lost.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+</head>
+<body>
+  <div class="lost-header">
+    <h1>Reported Lost Items</h1>
+
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="today">Today</button>
+      <button class="filter-btn" data-filter="week">This Week</button>
+    </div>
+
+    <a href="index.html" title="Back to Home">
+      <button class="back-button"><i class="fa-solid fa-arrow-left"></i> Back</button>
+    </a>
+  </div>
+
+  <div class="lost-container" id="lostItemsContainer">
+    <!-- JS will insert lost items here -->
+  </div>
+
+  <script src="lost.js"></script>
+</body>
+</html>

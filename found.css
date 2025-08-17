@@ -1,0 +1,133 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body with background image */
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  color: #dbeafe;
+  background-color: #dbeafe;
+  padding: 20px;
+}
+
+/* Top bar styles */
+.top-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+/* Search input */
+.search-box {
+  flex: 1 1 250px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* Dropdown */
+.category-select {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #eee;
+  color: black;
+}
+
+/* Filter buttons */
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.filter-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.filter-btn:hover {
+  background-color: #333;
+}
+
+.filter-btn.active {
+  background-color: #007bff;
+}
+
+/* Content area */
+.content {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.content h2 {
+  margin-bottom: 15px;
+  font-size: 28px;
+  color: #ffdd57;
+}
+
+.content p {
+  font-size: 18px;
+}
+
+/* ✅ Found items container */
+.found-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* ✅ Each found item card */
+.found-card {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease-in-out;
+}
+
+.found-card:hover {
+  transform: translateY(-5px);
+}
+
+.found-card h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #007bff;
+}
+
+.found-card p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+/* No items message */
+.no-items {
+  text-align: center;
+  color: #555;
+  padding: 30px;
+  font-size: 18px;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lost & Found</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      🔍 <strong>Lost & Found</strong>
+      <p class="tagline">Reconnecting people with their belongings</p>
+    </div>
+    <a href="Reportpage.html">
+      <button class="report-btn">+ Report Item</button>
+    </a>
+  </header>
+
+  <main>
+    <div class="icon-box">
+      <img src="image.png" alt="search" />
+    </div>
+    <h1>Find What You've Lost</h1>
+    <p class="subtitle">
+      Our community-driven platform helps reunite people with their lost belongings.
+      Report items, search our database, and help others find what they're looking for.
+    </p>
+
+    <div class="stats">
+      <div class="stat">
+        <span id="lostCount" class="number">0</span>
+        <p>Lost Items</p>
+      </div>
+      <div class="stat">
+        <span id="foundCount" class="number">0</span>
+        <p>Found Items</p>
+      </div>
+      <div class="stat">
+        <span id="reunitedCount" class="number">0</span>
+        <p>Reunited</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Search and No Items Section -->
+  <section class="search-section">
+    <div class="search-bar">
+      <input type="text" placeholder="🔍 Search items by title, description, or location..." />
+      <select title="Choose a category">
+        <option>All Categories</option>
+        <option>Gadgets</option>
+        <option>Clothing</option>
+        <option>Watch</option>
+        <option>Bottle</option>
+        <option>Jewellery</option>
+        <option>Laptop</option>
+        <option>Bags</option>
+        <option>Books</option>
+      </select>
+      <div class="filter-buttons">
+        <button class="active">All Items</button>
+        <a href="lost.html"><button type="button">Lost</button></a>
+        <a href="found.html"><button type="button">Found</button></a>
+      </div>
+    </div>
+    <div class="no-items">
+      <div class="icon">
+        <i class="fa-solid fa-magnifying-glass text-blue-500"></i>
+      </div>
+      <h2>No items found</h2>
+      <p>Try adjusting your search criteria or report a new item</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <i class="fa-solid fa-magnifying-glass"></i> <strong>Lost & Found Portal</strong>
+      </div>
+      <p>Helping communities reconnect with their belongings since 2025</p>
+      <p>Built with ❤️ for helping people find what they've lost</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
